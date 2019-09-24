@@ -1,0 +1,317 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Sep 24 14:56:49 2019
+# Process ID: 15056
+# Current directory: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1
+# Command line: vivado.exe -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+# Log file: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/top_level.vds
+# Journal file: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_level.tcl -notrace
+Command: synth_design -top top_level -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14996 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 430.004 ; gain = 98.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_level' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/top_level.vhd:26]
+INFO: [Synth 8-3491] module 'hex_display' declared at 'C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/hex_display.vhd:6' bound to instance 'hex_d' of component 'hex_display' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/top_level.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'hex_display' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/hex_display.vhd:15]
+WARNING: [Synth 8-614] signal 'an_b' is read in the process but is not in the sensitivity list [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/hex_display.vhd:33]
+WARNING: [Synth 8-614] signal 'num' is read in the process but is not in the sensitivity list [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/hex_display.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'hex_display' (1#1) [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/hex_display.vhd:15]
+INFO: [Synth 8-3491] module 'negater' declared at 'C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/negater.vhd:34' bound to instance 'neg' of component 'negater' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/top_level.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'negater' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/negater.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'negater' (2#1) [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/negater.vhd:41]
+INFO: [Synth 8-3491] module 'ripple_adder' declared at 'C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/ripple_adder.vhd:4' bound to instance 'ripple' of component 'ripple_adder' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/top_level.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'ripple_adder' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/ripple_adder.vhd:13]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/full_adder.vhd:3' bound to instance 'adder0' of component 'full_adder' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/ripple_adder.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'full_adder' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/full_adder.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (3#1) [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/full_adder.vhd:10]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/full_adder.vhd:3' bound to instance 'adder1' of component 'full_adder' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/ripple_adder.vhd:26]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/full_adder.vhd:3' bound to instance 'adder2' of component 'full_adder' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/ripple_adder.vhd:27]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/full_adder.vhd:3' bound to instance 'adder3' of component 'full_adder' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/ripple_adder.vhd:28]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/full_adder.vhd:3' bound to instance 'adder4' of component 'full_adder' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/ripple_adder.vhd:29]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/full_adder.vhd:3' bound to instance 'adder5' of component 'full_adder' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/ripple_adder.vhd:30]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/full_adder.vhd:3' bound to instance 'adder6' of component 'full_adder' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/ripple_adder.vhd:31]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/full_adder.vhd:3' bound to instance 'adder7' of component 'full_adder' [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/ripple_adder.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'ripple_adder' (4#1) [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/ripple_adder.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (5#1) [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/top_level.vhd:26]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 486.199 ; gain = 154.555
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 486.199 ; gain = 154.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 486.199 ; gain = 154.555
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/constrs_1/new/pins.xdc]
+Finished Parsing XDC File [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/constrs_1/new/pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/constrs_1/new/pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 801.910 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 801.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 801.910 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 801.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 801.910 ; gain = 470.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 801.910 ; gain = 470.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 801.910 ; gain = 470.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 801.910 ; gain = 470.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 16    
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module hex_display 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+Module negater 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module full_adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design top_level has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design top_level has port an[2] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 801.910 ; gain = 470.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 805.535 ; gain = 473.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 824.820 ; gain = 493.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 824.820 ; gain = 493.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 824.820 ; gain = 493.176
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 824.820 ; gain = 493.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 824.820 ; gain = 493.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 824.820 ; gain = 493.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 824.820 ; gain = 493.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 824.820 ; gain = 493.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     2|
+|4     |LUT2   |     4|
+|5     |LUT3   |     3|
+|6     |LUT4   |     3|
+|7     |LUT5   |     5|
+|8     |LUT6   |    15|
+|9     |FDRE   |    18|
+|10    |IBUF   |    17|
+|11    |OBUF   |    20|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |    93|
+|2     |  hex_d  |hex_display |    40|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 824.820 ; gain = 493.176
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 824.820 ; gain = 177.465
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 824.820 ; gain = 493.176
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 827.879 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 827.879 ; gain = 509.105
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 827.879 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/top_level.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 24 14:57:14 2019...

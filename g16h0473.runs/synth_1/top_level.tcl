@@ -32,7 +32,9 @@ set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/full_adder.vhd
   C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/hex_display.vhd
+  C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/kitt_clone.vhd
   C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/negater.vhd
+  C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/pwm.vhd
   C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/ripple_adder.vhd
   C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/top_level.vhd
 }

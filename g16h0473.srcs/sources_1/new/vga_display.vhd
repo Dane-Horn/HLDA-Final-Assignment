@@ -71,10 +71,10 @@ begin
     variable h_pos: integer range 0 to 10 := 0;
     variable d_pos: integer range 0 to 10 := 0;
     variable lead: integer range 0 to 767;
-    variable minx: integer range 0 to 1024 := 300;
-    variable miny: integer range 0 to 768 := 300;
-    variable maxx: integer range 0 to 1024 := 600;
-    variable maxy: integer range 0 to 768 := 600;
+    variable minx: integer range 0 to 1024 := 1024/2 - 5;
+    variable miny: integer range 0 to 768 := 768/2 - 5;
+    variable maxx: integer range 0 to 1024 := 1024/2 + 5;
+    variable maxy: integer range 0 to 768 := 768/2 + 5;
     variable btn_counter: integer range 0 to 10000000 := 1;
     variable smiley: mask := (
     (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), 

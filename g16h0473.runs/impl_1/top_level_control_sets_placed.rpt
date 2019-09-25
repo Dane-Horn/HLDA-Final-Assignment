@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Sep 25 11:35:07 2019
+| Date         : Wed Sep 25 12:03:33 2019
 | Host         : HONS47 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
 | Design       : top_level
@@ -74,14 +74,14 @@ Table of Contents
 |  vga/pixel_clock/inst/clk_out1 | vga/pixel_count0                     | vga/d_pos                            |                2 |              5 |
 |  clock_IBUF_BUFG               | kitt/lead[5]_i_1_n_0                 |                                      |                3 |              6 |
 |  clock_IBUF_BUFG               |                                      | led[14]_i_1_n_0                      |                2 |              7 |
+|  clock_IBUF_BUFG               | kitt/third/mult_count[9]_i_1__0_n_0  | kitt/third/count[6]_i_1__0_n_0       |                3 |              7 |
 |  clock_IBUF_BUFG               | kitt/last/sel                        | kitt/last/clear                      |                2 |              7 |
 |  clock_IBUF_BUFG               | kitt/second/mult_count[9]_i_1__1_n_0 | kitt/second/count[6]_i_1__1_n_0      |                2 |              7 |
-|  clock_IBUF_BUFG               | kitt/third/mult_count[9]_i_1__0_n_0  | kitt/third/count[6]_i_1__0_n_0       |                3 |              7 |
 |  vga/pixel_clock/inst/clk_out1 | vga/d_pos                            |                                      |                2 |              8 |
 |  vga/pixel_clock/inst/clk_out1 | vga/pixel_count0                     |                                      |                4 |              9 |
+|  clock_IBUF_BUFG               |                                      | kitt/third/mult_count[9]_i_1__0_n_0  |                2 |             10 |
 |  clock_IBUF_BUFG               |                                      | kitt/last/sel                        |                3 |             10 |
 |  clock_IBUF_BUFG               |                                      | kitt/second/mult_count[9]_i_1__1_n_0 |                3 |             10 |
-|  clock_IBUF_BUFG               |                                      | kitt/third/mult_count[9]_i_1__0_n_0  |                2 |             10 |
 |  vga/pixel_clock/inst/clk_out1 |                                      | vga/pixel_count0                     |                6 |             11 |
 |  vga/pixel_clock/inst/clk_out1 | vga/red[3]_i_2_n_0                   | vga/red                              |                5 |             12 |
 |  clock_IBUF_BUFG               |                                      |                                      |               11 |             14 |

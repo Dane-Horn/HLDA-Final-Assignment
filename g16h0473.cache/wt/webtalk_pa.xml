@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Sep 25 10:55:00 2019">
+<application name="pa" timeStamp="Wed Sep 25 11:34:00 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="d22e0587aec84526a998ce9084f82d4d" type="ProjectID"/>
-<property name="ProjectIteration" value="94" type="ProjectIteration"/>
+<property name="ProjectIteration" value="99" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -24,23 +24,23 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditDelete" value="1" type="JavaHandler"/>
 <property name="EditPaste" value="1" type="JavaHandler"/>
 <property name="EditUndo" value="2" type="JavaHandler"/>
-<property name="LaunchProgramFpga" value="60" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="64" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
-<property name="OpenHardwareManager" value="73" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="77" type="JavaHandler"/>
 <property name="OpenRecentTarget" value="14" type="JavaHandler"/>
-<property name="ProgramDevice" value="61" type="JavaHandler"/>
+<property name="ProgramDevice" value="65" type="JavaHandler"/>
 <property name="RecustomizeCore" value="1" type="JavaHandler"/>
-<property name="RunBitgen" value="100" type="JavaHandler"/>
-<property name="SaveFileProxyHandler" value="4" type="JavaHandler"/>
+<property name="RunBitgen" value="105" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="5" type="JavaHandler"/>
 <property name="SetTopNode" value="1" type="JavaHandler"/>
-<property name="ShowView" value="17" type="JavaHandler"/>
+<property name="ShowView" value="18" type="JavaHandler"/>
 </item>
 <item name="Gui Handlers">
 <property name="AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN" value="1" type="GuiHandlerData"/>
 <property name="BaseDialog_CANCEL" value="7" type="GuiHandlerData"/>
 <property name="BaseDialog_NO" value="1" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="139" type="GuiHandlerData"/>
-<property name="BaseDialog_YES" value="97" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="145" type="GuiHandlerData"/>
+<property name="BaseDialog_YES" value="102" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_CREATE_FILE" value="2" type="GuiHandlerData"/>
 <property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="10" type="GuiHandlerData"/>
 <property name="CreateConstraintsFilePanel_FILE_NAME" value="2" type="GuiHandlerData"/>
@@ -49,7 +49,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FPGAChooser_FPGA_TABLE" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_SPEED" value="2" type="GuiHandlerData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="111" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="185" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="194" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="3" type="GuiHandlerData"/>
 <property name="MsgView_WARNING_MESSAGES" value="3" type="GuiHandlerData"/>
@@ -61,7 +61,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PAViews_CODE" value="4" type="GuiHandlerData"/>
 <property name="PAViews_IP_CATALOG" value="2" type="GuiHandlerData"/>
 <property name="PAViews_PROJECT_SUMMARY" value="9" type="GuiHandlerData"/>
-<property name="ProgramFpgaDialog_PROGRAM" value="60" type="GuiHandlerData"/>
+<property name="ProgramFpgaDialog_PROGRAM" value="64" type="GuiHandlerData"/>
 <property name="ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE" value="3" type="GuiHandlerData"/>
 <property name="ProjectNameChooser_CHOOSE_PROJECT_LOCATION" value="1" type="GuiHandlerData"/>
 <property name="ProjectNameChooser_PROJECT_NAME" value="1" type="GuiHandlerData"/>

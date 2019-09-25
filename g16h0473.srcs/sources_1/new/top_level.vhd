@@ -15,7 +15,7 @@ entity top_level is
     Port ( 
         r, g, b: out std_logic_vector(3 downto 0);
         vsync, hsync: out std_logic;
-        btnC: in std_logic;
+        btnC, btnU, btnD, btnL, btnR: in std_logic;
         clock: in std_logic;
         fnum: in STD_LOGIC_VECTOR(7 downto 0);
         snum: in STD_LOGIC_VECTOR(7 downto 0);
@@ -66,7 +66,7 @@ architecture Behavioral of top_level is
             r             : OUT STD_LOGIC_VECTOR (3 downto 0);
             g             : OUT STD_LOGIC_VECTOR (3 downto 0);
             b             : OUT STD_LOGIC_VECTOR (3 downto 0);
-            
+            btnU, btnD, btnL, btnR: in std_logic;
             vsync         : OUT STD_LOGIC;
             hsync         : OUT STD_LOGIC
         );
@@ -87,7 +87,7 @@ begin
     neg: negater port map(num => snum, negated => neg_snum);
     ripple: ripple_adder port map(fnum => fnum, snum => neg_snum, result => sub_result, final_carry => carry);
     kitt: kitt_clone port map(clock => clock, lights => kitt_lights, btnC => btnC);
-    vga: vga_display port map (clock => clock, r => r, g => g, b => b, vsync => vsync, hsync => hsync);
+    vga: vga_display port map (clock => clock, r => r, g => g, b => b, vsync => vsync, hsync => hsync, btnU => btnU, btnD => btnD, btnL => btnL, btnR => btnR);
     process(clock)
     begin
         if (rising_edge(clock)) then 

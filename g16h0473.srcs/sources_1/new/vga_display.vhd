@@ -30,7 +30,7 @@ entity vga_display is
         r             : OUT STD_LOGIC_VECTOR (3 downto 0);
 		g             : OUT STD_LOGIC_VECTOR (3 downto 0);
 		b             : OUT STD_LOGIC_VECTOR (3 downto 0);
-		
+		btnU, btnD, btnL, btnR: in std_logic;
 		vsync         : OUT STD_LOGIC;
 		hsync         : OUT STD_LOGIC
   );
@@ -55,6 +55,11 @@ signal red : std_logic_vector (3 downto 0) := "0000";
 signal green : std_logic_vector (3 downto 0) := "0000";
 signal blue : std_logic_vector (3 downto 0) := "0000";
 begin
+    process(clock)
+    begin
+        
+    end process;
+
     pixel_clock : clk_wiz_0 port map(clk_out1 => p_clock, clk_in1 => clock);
     PROCESS (p_clock)
     VARIABLE pixel_count : INTEGER RANGE 0 TO 1344 := 0;
@@ -66,7 +71,11 @@ begin
     variable h_pos: integer range 0 to 10 := 0;
     variable d_pos: integer range 0 to 10 := 0;
     variable lead: integer range 0 to 767;
-    
+    variable minx: integer range 0 to 1024 := 300;
+    variable miny: integer range 0 to 768 := 300;
+    variable maxx: integer range 0 to 1024 := 600;
+    variable maxy: integer range 0 to 768 := 600;
+    variable btn_counter: integer range 0 to 10000000 := 1;
     variable smiley: mask := (
     (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), 
     (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), 
@@ -119,7 +128,25 @@ begin
     BEGIN
         IF (rising_edge(p_clock))
         THEN
-        
+            btn_counter := (btn_counter + 1) mod 1000000;
+            if (btn_counter = 0) then
+                if (btnU = '1') then
+                    miny := miny - 1;
+                    maxy := maxy - 1;
+                end if;
+                if (btnD = '1') then
+                    miny := miny + 1;
+                    maxy := maxy + 1;
+                end if;
+                if (btnL = '1') then
+                    minx := minx - 1;
+                    maxx := maxx - 1;
+                end if;
+                if (btnR = '1') then
+                    minx := minx + 1;
+                    maxx := maxx + 1;
+                end if;
+            end if;
             IF(pixel_count < 1024 AND line_count < 768)  -- frame space
             THEN
 --                 FRAME
@@ -156,7 +183,11 @@ begin
                         green <= "1111";
                         blue <= "1111";
                     when others =>
-                        if ((pixel_count + d_pos) mod 10 = v_pos) then
+                        if (pixel_count > minx and pixel_count < maxx and line_count > miny and line_count < maxy) then
+                            red <= "1000";
+                            green <= "1000";
+                            blue <= "1000";
+                        elsif ((pixel_count + d_pos) mod 10 = v_pos) then
                             green <= "1111";
                         elsif (pixel_count mod 10 = v_pos) then
                             red <= "1111";

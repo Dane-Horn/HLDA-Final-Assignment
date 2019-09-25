@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed Sep 25 10:56:26 2019
+| Date             : Wed Sep 25 11:35:27 2019
 | Host             : HONS47 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb -rpx top_level_power_routed.rpx
 | Design           : top_level
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.211        |
+| Total On-Chip Power (W)  | 0.212        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.149        |
+| Dynamic (W)              | 0.150        |
 | Device Static (W)        | 0.062        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 98.9         |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      584 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      294 |     20800 |            1.41 |
-|   Register     |    <0.001 |      182 |     41600 |            0.44 |
-|   CARRY4       |    <0.001 |       14 |      8150 |            0.17 |
-|   F7/F8 Muxes  |    <0.001 |       11 |     32600 |            0.03 |
+| Slice Logic    |     0.001 |      845 |       --- |             --- |
+|   LUT as Logic |     0.001 |      395 |     20800 |            1.90 |
+|   CARRY4       |    <0.001 |       49 |      8150 |            0.60 |
+|   Register     |    <0.001 |      244 |     41600 |            0.59 |
+|   F7/F8 Muxes  |    <0.001 |       13 |     32600 |            0.04 |
 |   Others       |     0.000 |       17 |       --- |             --- |
-| Signals        |    <0.001 |      454 |       --- |             --- |
+| Signals        |     0.001 |      651 |       --- |             --- |
 | MMCM           |     0.122 |        1 |         5 |           20.00 |
-| I/O            |     0.023 |       59 |       106 |           55.66 |
+| I/O            |     0.023 |       63 |       106 |           59.43 |
 | Static Power   |     0.062 |          |           |                 |
-| Total          |     0.211 |          |           |                 |
+| Total          |     0.212 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       0.950 |     0.010 |       0.004 |      0.006 |
+| Vccint    |       0.950 |     0.011 |       0.005 |      0.006 |
 | Vccaux    |       1.800 |     0.080 |       0.068 |      0.011 |
-| Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 |
+| Vcco33    |       3.300 |     0.008 |       0.007 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -145,9 +145,9 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| top_level       |     0.149 |
-|   kitt          |     0.002 |
-|   vga           |     0.123 |
+| top_level       |     0.150 |
+|   kitt          |     0.001 |
+|   vga           |     0.124 |
 |     pixel_clock |     0.122 |
 |       inst      |     0.122 |
 +-----------------+-----------+

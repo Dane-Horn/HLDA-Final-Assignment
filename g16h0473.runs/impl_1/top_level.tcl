@@ -73,7 +73,9 @@ set rc [catch {
   set_property parent.project_path C:/Users/g16h0473/Desktop/g16h0473/g16h0473.xpr [current_project]
   set_property ip_output_repo C:/Users/g16h0473/Desktop/g16h0473/g16h0473.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES XPM_CDC [current_project]
   add_files -quiet C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/top_level.dcp
+  read_ip -quiet c:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
   read_xdc C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/constrs_1/new/pins.xdc
   link_design -top top_level -part xc7a35ticpg236-1L
   close_msg_db -file init_design.pb
@@ -154,6 +156,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES XPM_CDC [current_project]
   catch { write_mem_info -force top_level.mmi }
   write_bitstream -force top_level.bit 
   catch {write_debug_probes -quiet -force top_level}

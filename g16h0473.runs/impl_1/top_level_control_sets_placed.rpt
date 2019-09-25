@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Sep 25 01:39:50 2019
+| Date         : Wed Sep 25 10:56:06 2019
 | Host         : HONS47 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
 | Design       : top_level
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    12 |
-| Unused register locations in slices containing registers |    41 |
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |    74 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,9 +34,14 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
+|      1 |            2 |
+|      2 |            1 |
 |      6 |            1 |
 |      7 |            4 |
+|      8 |            1 |
 |     10 |            3 |
+|     11 |            1 |
+|     12 |            2 |
 |     14 |            1 |
 |    16+ |            3 |
 +--------+--------------+
@@ -50,31 +55,38 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              14 |           10 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              54 |           16 |
-| Yes          | No                    | No                     |              23 |           19 |
+| No           | Yes                   | No                     |              65 |           23 |
+| Yes          | No                    | No                     |              33 |           25 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              44 |           12 |
+| Yes          | Yes                   | No                     |              70 |           24 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------+--------------------------------------+--------------------------------------+------------------+----------------+
-|   Clock Signal   |             Enable Signal            |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
-+------------------+--------------------------------------+--------------------------------------+------------------+----------------+
-|  clock_IBUF_BUFG | kitt/lead[5]_i_1_n_0                 |                                      |                4 |              6 |
-|  clock_IBUF_BUFG |                                      | led[14]_i_1_n_0                      |                3 |              7 |
-|  clock_IBUF_BUFG | kitt/third/mult_count[9]_i_1__0_n_0  | kitt/third/count[6]_i_1__0_n_0       |                2 |              7 |
-|  clock_IBUF_BUFG | kitt/last/sel                        | kitt/last/clear                      |                2 |              7 |
-|  clock_IBUF_BUFG | kitt/second/mult_count[9]_i_1__1_n_0 | kitt/second/count[6]_i_1__1_n_0      |                2 |              7 |
-|  clock_IBUF_BUFG |                                      | kitt/third/mult_count[9]_i_1__0_n_0  |                3 |             10 |
-|  clock_IBUF_BUFG |                                      | kitt/last/sel                        |                3 |             10 |
-|  clock_IBUF_BUFG |                                      | kitt/second/mult_count[9]_i_1__1_n_0 |                2 |             10 |
-|  clock_IBUF_BUFG |                                      |                                      |               10 |             14 |
-|  clock_IBUF_BUFG |                                      | hex_d/clear                          |                5 |             17 |
-|  clock_IBUF_BUFG | btnC_IBUF                            |                                      |               15 |             17 |
-|  clock_IBUF_BUFG | btnC_IBUF                            | kitt/count[23]_i_1_n_0               |                6 |             23 |
-+------------------+--------------------------------------+--------------------------------------+------------------+----------------+
++--------------------------------+--------------------------------------+--------------------------------------+------------------+----------------+
+|          Clock Signal          |             Enable Signal            |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++--------------------------------+--------------------------------------+--------------------------------------+------------------+----------------+
+|  vga/pixel_clock/inst/clk_out1 | vga/b_hsync_i_2_n_0                  | vga/b_hsync                          |                1 |              1 |
+|  vga/pixel_clock/inst/clk_out1 | vga/b_vsync0_out                     | vga/b_vsync2_out                     |                1 |              1 |
+|  vga/pixel_clock/inst/clk_out1 | vga/pixel_count0                     |                                      |                2 |              2 |
+|  clock_IBUF_BUFG               | kitt/lead[5]_i_1_n_0                 |                                      |                3 |              6 |
+|  clock_IBUF_BUFG               |                                      | led[14]_i_1_n_0                      |                4 |              7 |
+|  clock_IBUF_BUFG               | kitt/last/sel                        | kitt/last/clear                      |                2 |              7 |
+|  clock_IBUF_BUFG               | kitt/second/mult_count[9]_i_1__1_n_0 | kitt/second/count[6]_i_1__1_n_0      |                2 |              7 |
+|  clock_IBUF_BUFG               | kitt/third/mult_count[9]_i_1__0_n_0  | kitt/third/count[6]_i_1__0_n_0       |                2 |              7 |
+|  vga/pixel_clock/inst/clk_out1 | vga/d_pos_0                          |                                      |                4 |              8 |
+|  clock_IBUF_BUFG               |                                      | kitt/last/sel                        |                3 |             10 |
+|  clock_IBUF_BUFG               |                                      | kitt/second/mult_count[9]_i_1__1_n_0 |                4 |             10 |
+|  clock_IBUF_BUFG               |                                      | kitt/third/mult_count[9]_i_1__0_n_0  |                2 |             10 |
+|  vga/pixel_clock/inst/clk_out1 |                                      | vga/pixel_count0                     |                5 |             11 |
+|  vga/pixel_clock/inst/clk_out1 | vga/pixel_count0                     | vga/d_pos_0                          |                7 |             12 |
+|  vga/pixel_clock/inst/clk_out1 | vga/red0                             | vga/red                              |                3 |             12 |
+|  clock_IBUF_BUFG               |                                      |                                      |               10 |             14 |
+|  clock_IBUF_BUFG               |                                      | hex_d/clear                          |                5 |             17 |
+|  clock_IBUF_BUFG               | btnC_IBUF                            |                                      |               16 |             17 |
+|  clock_IBUF_BUFG               | btnC_IBUF                            | kitt/count[23]_i_1_n_0               |                6 |             23 |
++--------------------------------+--------------------------------------+--------------------------------------+------------------+----------------+
 
 

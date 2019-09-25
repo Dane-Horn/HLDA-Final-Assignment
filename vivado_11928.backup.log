@@ -1,0 +1,566 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Sep 24 23:02:05 2019
+# Process ID: 11928
+# Current directory: C:/Users/g16h0473/Desktop/g16h0473
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3748 C:\Users\g16h0473\Desktop\g16h0473\g16h0473.xpr
+# Log file: C:/Users/g16h0473/Desktop/g16h0473/vivado.log
+# Journal file: C:/Users/g16h0473/Desktop/g16h0473\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/g16h0473/Desktop/g16h0473/g16h0473.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 760.871 ; gain = 154.453
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:11:08 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:11:08 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:13:38 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:13:38 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 898.531 ; gain = 0.055
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AB442CA
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:16:00 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:16:00 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:20:35 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:20:35 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:24:12 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:24:12 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:26:45 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:26:45 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:28:40 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:28:40 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:31:46 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:31:46 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:32:53 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:32:53 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:35:50 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:35:50 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:39:26 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:39:26 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:39:59 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:39:59 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:45:24 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:45:24 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:46:40 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:46:40 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:47:16 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:47:16 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AB442CA
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:49:39 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:49:39 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:52:52 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:52:52 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Sep 24 23:57:50 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Tue Sep 24 23:57:50 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:04:01 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:04:01 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AB442CA
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:06:40 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:06:40 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:08:55 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:08:55 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:14:39 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:14:39 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:20:16 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:20:16 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:23:30 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:23:30 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:28:52 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:28:52 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:33:09 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:33:09 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:38:30 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:38:30 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:42:08 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:42:08 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:43:05 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:43:05 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:45:07 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:45:07 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:47:16 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:47:16 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:49:50 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:49:50 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:54:20 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:54:20 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 00:57:32 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 00:57:32 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 01:03:48 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 01:03:48 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 01:09:51 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 01:09:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 01:10:31 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 01:10:31 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 01:13:31 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 01:13:31 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 01:16:02 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 01:16:02 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 01:20:36 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 01:20:36 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 01:27:36 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 01:27:36 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 01:29:11 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 01:29:11 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 01:33:05 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 01:33:05 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 01:33:38 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 01:33:38 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 01:36:13 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 01:36:13 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Sep 25 01:38:55 2019] Launched synth_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/runme.log
+[Wed Sep 25 01:38:55 2019] Launched impl_1...
+Run output will be captured here: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+close [ open C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/vga_display.vhd w ]
+add_files C:/Users/g16h0473/Desktop/g16h0473/g16h0473.srcs/sources_1/new/vga_display.vhd
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 25 01:50:27 2019...

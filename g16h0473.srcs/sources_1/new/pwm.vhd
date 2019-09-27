@@ -22,6 +22,10 @@ architecture Behavioral of pwm is
     signal count: integer range 0 to 101 := 0;
     signal mult_count: integer range 0 to 1001 := 0;
 begin
+    --clock is assumed to be 100MHz
+    --scaled down by 1000 to 100KHz
+    --each 100 ticks of this clock with become 1 tick of clock going out
+    --duty controls how much of this tick is up or down where 100 >= duty >= 0
     process(clock)
     begin
         if (rising_edge(clock)) then

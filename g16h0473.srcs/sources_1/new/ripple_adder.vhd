@@ -30,6 +30,6 @@ begin
     adder5: full_adder port map(a => fnum(5), b => snum(5), cin => c(5), s => result(5), cout => c(6));
     adder6: full_adder port map(a => fnum(6), b => snum(6), cin => c(6), s => result(6), cout => c(7));
     adder7: full_adder port map(a => fnum(7), b => snum(7), cin => c(7), s => result(7), cout => c(8));
-    c(0) <= '1'; 
+    c(0) <= '1'; -- set first carry bit to 1, this works because the second number was just negated
     final_carry <= not c(8); --9th cout will flag underflow
 end Behavioral;

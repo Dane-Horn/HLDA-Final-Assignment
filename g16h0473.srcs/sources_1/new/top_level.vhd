@@ -1,15 +1,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity top_level is
     Port ( 
@@ -84,14 +76,14 @@ architecture Behavioral of top_level is
     signal kitt_lights: std_logic_vector(15 downto 0) := "0000000000000000";
 begin
     hex_d: hex_display port map(clock => clock, num => sub_result, seg => seg, an => an);
-    neg: negater port map(num => snum, negated => neg_snum);
+    neg: negater port map(num => snum, negated => neg_snum); -- negate number before addition to make it subtraction
     ripple: ripple_adder port map(fnum => fnum, snum => neg_snum, result => sub_result, final_carry => carry);
     kitt: kitt_clone port map(clock => clock, lights => kitt_lights, btnC => btnC);
     vga: vga_display port map (clock => clock, r => r, g => g, b => b, vsync => vsync, hsync => hsync, btnU => btnU, btnD => btnD, btnL => btnL, btnR => btnR);
     process(clock)
     begin
         if (rising_edge(clock)) then 
-            if (btnC = '1') then
+            if (btnC = '1') then --if button is pressed led is controlled by kitt_lights otherwise displays subtraction result
                 led <= kitt_lights;
             else
                 led(7 downto 0) <= sub_result;

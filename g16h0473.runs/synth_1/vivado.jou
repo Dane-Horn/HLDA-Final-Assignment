@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Sep 25 12:02:29 2019
-# Process ID: 12824
+# Start of session at: Fri Sep 27 08:43:11 2019
+# Process ID: 12396
 # Current directory: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1
 # Command line: vivado.exe -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
 # Log file: C:/Users/g16h0473/Desktop/g16h0473/g16h0473.runs/synth_1/top_level.vds

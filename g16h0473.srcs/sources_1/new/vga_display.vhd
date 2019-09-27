@@ -1,24 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 25.09.2019 01:48:49
--- Design Name: 
--- Module Name: vga_display - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 use IEEE.STD_LOGIC_ARITH.ALL;
@@ -75,7 +54,7 @@ begin
     variable miny: integer range 0 to 768 := 768/2 - 5;
     variable maxx: integer range 0 to 1024 := 1024/2 + 5;
     variable maxy: integer range 0 to 768 := 768/2 + 5;
-    variable btn_counter: integer range 0 to 10000000 := 1;
+    variable btn_counter: integer range 0 to 10000000 := 1; --starts at 1 because the press triggers when this hits 0
     variable smiley: mask := (
     (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), 
     (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), 
@@ -128,7 +107,7 @@ begin
     BEGIN
         IF (rising_edge(p_clock))
         THEN
-            btn_counter := (btn_counter + 1) mod 1000000;
+            btn_counter := (btn_counter + 1) mod 1000000; --only move the block if the counter is pressed down for this many rising edges
             if (btn_counter = 0) then
                 if (btnU = '1') then
                     miny := miny - 1;
@@ -150,9 +129,11 @@ begin
             IF(pixel_count < 1024 AND line_count < 768)  -- frame space
             THEN
 --                 FRAME
+                -- default is black
                 red <= "0000";
                 green <= "0000";
                 blue <= "0000";
+                -- colour in based on number in mask
                 case smiley(line_count / 16, pixel_count / 16) is
                     when 1 => 
                         red <= "1111";
@@ -183,6 +164,8 @@ begin
                         green <= "1111";
                         blue <= "1111";
                     when others =>
+                        -- when 0 do other things
+                        -- this will put the mask on the higest layer
                         if (pixel_count > minx and pixel_count < maxx and line_count > miny and line_count < maxy) then
                             red <= "1000";
                             green <= "1000";

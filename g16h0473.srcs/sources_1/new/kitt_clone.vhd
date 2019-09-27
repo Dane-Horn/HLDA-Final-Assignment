@@ -25,6 +25,10 @@ signal mid: std_logic;
 signal semi: std_logic;
 signal lead: integer range -4 to 23 := 16;
 begin
+    --lead controls where the lead led appears
+    --this goes from 16 -> -4 -> 0 -> 19 -> 15 and back
+    -- this goes out of range to simulate "bounce" look
+    --lights is then indexed based on this and set to the relevant pwm'ed signal
     last: pwm port map(clock => clock, duty => 25, sig => dim);
     third: pwm port map(clock => clock, duty => 50, sig => mid);
     second: pwm port map(clock => clock, duty => 75, sig => semi);
